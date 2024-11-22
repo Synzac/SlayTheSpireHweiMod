@@ -18,6 +18,12 @@ public class VulnerablePowerPatch {
                 if (VP.owner != null && !VP.owner.isPlayer && AbstractDungeon.player.hasRelic("Paper Frog"))
                     return damage * 1.75F;
                 return damage * 1.5F;
+            } else if (type == DamageInfo.DamageType.NORMAL) {
+                if (VP.owner.isPlayer && AbstractDungeon.player.hasRelic("Odd Mushroom"))
+                    return damage * 1.25F;
+                if (VP.owner != null && !VP.owner.isPlayer && AbstractDungeon.player.hasRelic("Paper Frog"))
+                    return damage * 1.75F;
+                return damage * 1.5F;
             }
             return damage;
         }

@@ -51,7 +51,8 @@ public class LingGuangZhaXian extends MouldCard {
 
     @Override
     public void triggerWhenDrawn() {
-        this.tags.remove(ModHelper.getSig(this));
+        if(ModHelper.getSig(this) != null)
+            this.tags.remove(ModHelper.getSig(this));
         this.flash();
         int roll = AbstractDungeon.cardRandomRng.random(99);
         if (roll < 30) {
