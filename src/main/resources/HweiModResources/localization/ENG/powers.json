@@ -1,0 +1,50 @@
+{
+  "HweiMod:APPower":{
+    "NAME": "法强",
+    "DESCRIPTIONS": [
+      "增强护盾和法术伤害"
+    ]
+  },
+  "HweiMod:InkPower":{
+  "NAME": "宿墨",
+  "DESCRIPTIONS": [
+    "每1滴 #y宿墨 增加2点 #y法强 。如果有 #y宿墨 ，打出攻击牌时会额外造成2点 #y法术伤害 ，若处于 #y主题 中还将产生额外效果，然后消耗1滴 #y宿墨 。"
+  ]
+},
+  "HweiMod:Color_DisasterPower": {
+    "NAME": "色彩-灾",
+    "DESCRIPTIONS": [
+      "#g彗自身: NL 获得任意两层相同 #y色彩 时，进入相应 #y主题 。 NL #r敌人： NL 灾+灾：爆炸，造成3点 #y法术伤害 。 NL 灾+靖：生机，彗获得2点 #y护盾 。 NL 灾+悚：恐怖，给予一层 易伤 。 NL 灾+绝望：毁灭，所有敌人受到双倍加成的6点无来源 #y法术伤害 。"
+    ]
+  },
+  "HweiMod:Color_SerenityPower": {
+    "NAME": "色彩-靖",
+    "DESCRIPTIONS": [
+      "#g彗自身: NL 获得任意两层相同 #y色彩 时，进入相应 #y主题 。 NL #r敌人： NL 靖+靖：爆炸，造成3点 #y法术伤害 。 NL 靖+灾：生机，彗获得2点 #y护盾 。 NL 靖+悚：镇压，给予一层 虚弱 。 NL 靖+绝望：毁灭，所有敌人受到双倍加成的6点无来源 #y法术伤害 。"
+    ]
+  },
+  "HweiMod:Color_TormentPower": {
+    "NAME": "色彩-悚",
+    "DESCRIPTIONS": [
+      "#g彗自身: NL 获得任意两层相同 #y色彩 时，进入相应 #y主题 。 NL #r敌人： NL 悚+悚：爆炸，造成3点 #y法术伤害 。 NL 悚+灾：恐怖，给予一层 易伤 。 NL 悚+靖：镇压，给予一层 虚弱 。 NL 悚+绝望：毁灭，所有敌人受到双倍加成的6点无来源 #y法术伤害 。"
+    ]
+  },
+  "HweiMod:Subject_DisasterPower": {
+    "NAME": "主题-灾",
+    "DESCRIPTIONS": [
+      "打出一张无 #y落款 的牌后，对于此牌的每个目标，或是无目标时的自身，若没有 #y色彩 ，则给予 #r色彩-灾 。 NL 彗获得两层 #r色彩-灾 时，对所有敌人造成“ #y爆炸 ”景象效果。 NL 触发 #y宿墨 时，额外伤害翻倍。"
+    ]
+  },
+  "HweiMod:Subject_SerenityPower": {
+    "NAME": "主题-靖",
+    "DESCRIPTIONS": [
+      "打出一张无 #y落款 的牌后，对于此牌的每个目标，或是无目标时的自身，若没有 #y色彩 ，则给予 #r色彩-靖 。 NL 彗获得两层 #r色彩-靖 时，对所有敌人造成“ #y爆炸 ”景象效果。 NL 触发 #y宿墨 时，抽一张牌。"
+    ]
+  },
+  "HweiMod:Subject_TormentPower": {
+    "NAME": "主题-悚",
+    "DESCRIPTIONS": [
+      "打出一张无 #y落款 的牌后，对于此牌的每个目标，或是无目标时的自身，若没有 #y色彩 ，则给予 #r色彩-悚 。 NL 彗获得两层 #r色彩-悚 时，对所有敌人造成“ #y爆炸 ”景象效果。 NL 触发 #y宿墨 时，获得 [E] 。"
+    ]
+  }
+}

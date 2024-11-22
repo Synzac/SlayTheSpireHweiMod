@@ -1,0 +1,9 @@
+{
+  "HweiMod:StrangePaintbrush": {
+    "NAME": "诡异的画笔",
+    "FLAVOR": "止水作墨，狂潮作纸。万物落于笔端。",
+    "DESCRIPTIONS": [
+      "每局游戏限三次，你可以在地图上画出横向通路，即进入同层数的其他房间。"
+    ]
+  }
+}

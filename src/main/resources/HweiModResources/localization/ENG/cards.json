@@ -1,0 +1,22 @@
+{
+  "HweiMod:Strike": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "HweiMod:Defend": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。"
+  },
+  "HweiMod:ZaiE": {
+    "NAME": "灾厄",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 落款 ：灾。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 落款 ：灾。"
+  },
+  "HweiMod:JingMing": {
+    "NAME": "靖冥",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1滴 宿墨 。 NL *落款 ：靖。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1滴 宿墨 。 NL *落款 ：靖。"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "modid": "HweiMod",
+  "name": "LOL Hwei(异画师-彗) mod",
+  "author_list": ["枯野舟歌"],
+  "credits": "Basemod, ModTheSpire, stslib#modding",
+  "description": "加入了来自英雄联盟的角色异画师-彗",
+  "version": "0.0.1",
+  "sts_version": "12-18-2022",
+  "mts_version": "3.30.3",
+  "dependencies": ["basemod"]
+}
