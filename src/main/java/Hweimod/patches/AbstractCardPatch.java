@@ -36,7 +36,7 @@ public class AbstractCardPatch {
                 sb.setTransformMatrix(mx4);
                 sb.begin();
                 if (t != null)
-                    sb.draw(t, card.getCardBgAtlas().getRegionWidth()*card.drawScale, -card.getCardBgAtlas().getRegionHeight()*card.drawScale,
+                    sb.draw(t, (float) (card.getCardBgAtlas().getRegionWidth()*card.drawScale*Settings.scale*0.65), (float) (-card.getCardBgAtlas().getRegionHeight()*card.drawScale*Settings.scale*0.8),
                             0, 0, t.getWidth(), t.getHeight(), card.drawScale * 0.8F, card.drawScale * 0.8F, 0,
                             0, 0, t.getWidth(), t.getHeight(), false, false);
                 sb.end();
