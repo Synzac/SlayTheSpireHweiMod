@@ -15,7 +15,7 @@ public class YuChang extends MouldCard {
 
     public YuChang(){
         super(YuChang.class.getSimpleName(), 1, CardType.SKILL, CardRarity.RARE, CardTarget.SELF);
-        this.block = this.baseBlock = 4;
+        this.block = this.baseBlock = 3;
         this.magicNumber = this.baseMagicNumber = 2;
         this.tags.add(HweiCardTagsEnum.SIGNATURE_SERENITY);
         this.tags.add(HweiCardTagsEnum.SHIELD);

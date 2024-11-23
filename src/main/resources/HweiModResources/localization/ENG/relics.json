@@ -1,9 +1,16 @@
 {
   "HweiMod:StrangePaintbrush": {
     "NAME": "诡异的画笔",
-    "FLAVOR": "止水作墨，狂潮作纸。万物落于笔端。",
+    "FLAVOR": "新的道路于笔端显现。",
     "DESCRIPTIONS": [
-      "每局游戏限三次，你可以在地图上画出横向通路，即进入同层数的其他房间。"
+      "你有3次机会可以在选择下一步的房间时，进入同高度的，且与当前房间不同类的房间。"
+    ]
+  },
+  "HweiMod:Heartsteel": {
+    "NAME": "心之钢",
+    "FLAVOR": "Heart of Steel",
+    "DESCRIPTIONS": [
+      "对每个敌人第一次造成伤害时，额外造成 #b10% 你的最大生命值的伤害，使你的最大生命值提升 #b2% 。"
     ]
   }
 }

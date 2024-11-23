@@ -8,5 +8,40 @@
       "毁灭",
       "虚无"
     ]
+  },
+  "HweiMod:TiaoHeMingYunAction": {
+    "TEXT": [
+      "交换落款。"
+    ]
+  },
+  "HweiMod:HangAction": {
+    "TEXT": [
+      "悬置"
+    ]
+  },
+  "HweiMod:OptionalQuXiaAction": {
+    "TEXT": [
+      "选择此牌则将其取下"
+    ]
+  },
+  "HweiMod:SanShengWanWuAction": {
+    "TEXT": [
+      "作为三生万物选择的牌"
+    ]
+  },
+  "HweiMod:QiaoDuoTianGongAction": {
+    "TEXT": [
+      "选择一张牌悬置，其打出前耗能为0。"
+    ]
+  },
+  "HweiMod:SuLianFengShuangAction": {
+    "TEXT": [
+      "消耗，然后向手牌中加入1张基础伤害和基础格挡数值与之相等的鹰。"
+    ]
+  },
+  "HweiMod:HuaZhongLingAction": {
+    "TEXT": [
+      "复制，每过若干回合再次复制。"
+    ]
   }
 }
