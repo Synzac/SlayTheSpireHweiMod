@@ -33,9 +33,9 @@ public class QingHuiYeNing extends MouldCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(this.upgraded)
+        /*if(this.upgraded)
             CardCrawlGame.sound.play("QingHuiYeNing");
-
+        */
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         addToBot(new ApplyPowerAction(m, p, new MoonlightPower(m)));
 

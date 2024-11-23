@@ -1,18 +1,18 @@
 {
   "HweiMod:Strike": {
-    "NAME": "打击",
-    "DESCRIPTION": "{@@}造成 !D! 点伤害。{!S!|>0= NL 落款 ：}{!S!|1=灾|2=靖|3=悚|4=绝望}{!S!|>0=。}",
-    "UPGRADE_DESCRIPTION": "{@@}造成 !D! 点伤害。{!S!|>0= NL 落款 ：}{!S!|1=灾|2=靖|3=悚|4=绝望}{!S!|>0=。}"
+    "NAME": "Strike",
+    "DESCRIPTION": "{@@}Deal !D! damage.{!S!|>0= NL Signature:}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage。{!S!|>0= NL Signature:}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}"
   },
   "HweiMod:Defend": {
-    "NAME": "防御",
-    "DESCRIPTION": "{@@}获得 !B! 点 格挡 。{!S!|>0= NL 落款 ：}{!S!|1=灾|2=靖|3=悚|4=绝望}{!S!|>0=。}",
-    "UPGRADE_DESCRIPTION": "{@@}获得 !B! 点 格挡 。{!S!|>0= NL 落款 ：}{!S!|1=灾|2=靖|3=悚|4=绝望}{!S!|>0=。}"
+    "NAME": "Defend",
+    "DESCRIPTION": "{@@}Gain !B! Block.{!S!|>0= NL Signature:}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block.{!S!|>0= NL Signature:}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}"
   },
   "HweiMod:ZaiE": {
     "NAME": "灾厄",
-    "DESCRIPTION": "{@@}造成 !D! 点 法术伤害 。{!S!|>0= NL 落款 ：}{!S!|1=灾|2=靖|3=悚|4=绝望}{!S!|>0=。}",
-    "UPGRADE_DESCRIPTION": "{@@}造成 !D! 点 法术伤害 。{!S!|>0= NL 落款 ：}{!S!|1=灾|2=靖|3=悚|4=绝望}{!S!|>0=。}"
+    "DESCRIPTION": "{@@}Deal !D! MagicDamage.{!S!|>0= NL Signature:}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! MagicDamage.{!S!|>0= NL Signature:}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}"
   },
   "HweiMod:JingMing": {
     "NAME": "靖冥",

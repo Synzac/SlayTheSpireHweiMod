@@ -2,27 +2,27 @@
   "keywords": [
     {
       "NAMES": [
-        "法强"
+        "AP"
       ],
-      "DESCRIPTION": "增强 #y法术伤害 和 #y护盾 的数值。"
+      "DESCRIPTION": "increases the effectiveness of #yMagicDamage and #yShield."
     },
     {
       "NAMES": [
-        "法术伤害"
+        "MagicDamage"
       ],
-      "DESCRIPTION": "受到 #y法强 而非力量加成的伤害。"
+      "DESCRIPTION": "damage which increases its effectiveness by #yAP."
     },
     {
       "NAMES": [
-        "护盾"
+        "Shield"
       ],
-      "DESCRIPTION": "受到 #y法强 而非敏捷加成的格挡。"
+      "DESCRIPTION": "block which increases its effectiveness by #yAP."
     },
     {
       "NAMES": [
-        "落款"
+        "Signature"
       ],
-      "DESCRIPTION": "使用此牌后给予目标敌人一层相应 #y色彩 。若该牌不指定敌人为目标，则为给予自身。同一张牌最多具有1种落款，获得新的落款会覆盖原有的。"
+      "DESCRIPTION": "Gives its #yColor 。若该牌不指定敌人为目标，则为给予自身。同一张牌最多具有1种落款，获得新的落款会覆盖原有的。"
     },
     {
       "NAMES": [

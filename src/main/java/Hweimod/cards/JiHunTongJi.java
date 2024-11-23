@@ -35,7 +35,7 @@ public class JiHunTongJi extends MouldCard {
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         else {
             if(m != null) {
-                CardCrawlGame.sound.play("JiHunTongJi");
+                //CardCrawlGame.sound.play("JiHunTongJi");
                 addToBot(new VFXAction(new WeightyImpactEffect(m.hb.cX, m.hb.cY)));
             }
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage), AbstractGameAction.AttackEffect.NONE));
