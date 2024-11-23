@@ -1,23 +1,16 @@
 package Hweimod.patches;
 
-import Hweimod.cards.mould.MouldCard;
 import Hweimod.helpers.ModHelper;
 import Hweimod.modcore.HweiCardTagsEnum;
-import basemod.abstracts.AbstractCardModifier;
-import basemod.helpers.CardModifierManager;
-import basemod.patches.com.megacrit.cardcrawl.cards.AbstractCard.CardModifierPatches;
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Vector2;
-import com.evacipated.cardcrawl.modthespire.lib.*;
+import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.helpers.CardLibrary;
-import com.megacrit.cardcrawl.helpers.FontHelper;
-import javassist.CtBehavior;
+
+import static Hweimod.helpers.ModHelper.*;
 
 public class AbstractCardPatch {
     @SpirePatch(clz = AbstractCard.class,
@@ -56,13 +49,13 @@ public class AbstractCardPatch {
     private static Texture getTexture(AbstractCard.CardTags tag) {
         Texture t = null;
         if(tag == HweiCardTagsEnum.SIGNATURE_DISASTER) {
-            t = new Texture("HweiModResources/img/powers/Color_DisasterPower84.png");
+            t = texture1;
         } else if (tag == HweiCardTagsEnum.SIGNATURE_SERENITY){
-            t = new Texture("HweiModResources/img/powers/Color_SerenityPower84.png");
+            t = texture2;
         } else if (tag == HweiCardTagsEnum.SIGNATURE_TORMENT) {
-            t = new Texture("HweiModResources/img/powers/Color_TormentPower84.png");
+            t = texture3;
         } else if (tag == HweiCardTagsEnum.SIGNATURE_DESPAIR) {
-            t = new Texture("HweiModResources/img/powers/Color_DespairPower84.png");
+            t = texture4;
         }
         return t;
     }

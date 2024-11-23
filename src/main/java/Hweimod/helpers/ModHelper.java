@@ -3,6 +3,7 @@ package Hweimod.helpers;
 import Hweimod.modcore.HweiCardTagsEnum;
 import basemod.ReflectionHacks;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.Vector2;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -16,6 +17,11 @@ public class ModHelper {
     public static String makePath(String id) {
         return "HweiMod:" + id;
     }
+
+    public static Texture texture1 = new Texture("HweiModResources/img/powers/Color_DisasterPower84.png");
+    public static Texture texture2 = new Texture("HweiModResources/img/powers/Color_SerenityPower84.png");
+    public static Texture texture3 = new Texture("HweiModResources/img/powers/Color_TormentPower84.png");
+    public static Texture texture4 = new Texture("HweiModResources/img/powers/Color_DespairPower84.png");
 
     //获得能力图片地址
     public static String makePowerAd(String name, boolean isPortrait) {

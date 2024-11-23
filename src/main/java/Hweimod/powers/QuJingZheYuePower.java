@@ -35,7 +35,8 @@ public class QuJingZheYuePower extends AbstractPower {
     @Override
     public void atStartOfTurn() {
         flash();
-        MouldCard.xuanzhiquReceiveCard(AbstractDungeon.player.drawPile.getBottomCard(), AbstractDungeon.player.drawPile);
+        if(!AbstractDungeon.player.drawPile.isEmpty())
+            MouldCard.xuanzhiquReceiveCard(AbstractDungeon.player.drawPile.getBottomCard(), AbstractDungeon.player.drawPile);
     }
 
     public void updateDescription() {
