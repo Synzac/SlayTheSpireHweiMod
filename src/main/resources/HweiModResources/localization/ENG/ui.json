@@ -1,47 +1,47 @@
 {
   "HweiMod:ApplyPowerAction": {
     "TEXT": [
-      "爆炸",
-      "生机",
-      "恐怖",
-      "镇压",
-      "毁灭",
-      "虚无"
+      "Explosion",
+      "vitality",
+      "Fear",
+      "Repress",
+      "Destroy",
+      "Void"
     ]
   },
   "HweiMod:TiaoHeMingYunAction": {
     "TEXT": [
-      "交换落款。"
+      "exchange Signatures"
     ]
   },
   "HweiMod:HangAction": {
     "TEXT": [
-      "悬置"
+      "hang"
     ]
   },
   "HweiMod:OptionalQuXiaAction": {
     "TEXT": [
-      "选择此牌则将其取下"
+      "If select this card, take it down"
     ]
   },
   "HweiMod:SanShengWanWuAction": {
     "TEXT": [
-      "作为三生万物选择的牌"
+      "as the choice of Three for All"
     ]
   },
   "HweiMod:QiaoDuoTianGongAction": {
     "TEXT": [
-      "选择一张牌悬置，其打出前耗能为0。"
+      "Select a card to hang, it costs 0 before played."
     ]
   },
   "HweiMod:SuLianFengShuangAction": {
     "TEXT": [
-      "消耗，然后向手牌中加入1张基础伤害和基础格挡数值与之相等的鹰。"
+      "exhaust, then add an Eagle with the same basic damage and basic block values to your hand."
     ]
   },
   "HweiMod:HuaZhongLingAction": {
     "TEXT": [
-      "复制，每过若干回合再次复制。"
+      "copy, and copy again every few rounds."
     ]
   }
 }

@@ -22,55 +22,55 @@
       "NAMES": [
         "Signature"
       ],
-      "DESCRIPTION": "Gives its #yColor 。若该牌不指定敌人为目标，则为给予自身。同一张牌最多具有1种落款，获得新的落款会覆盖原有的。"
+      "DESCRIPTION": "Gives #yColor to its targets. A card can have at most 1 signature, obtaining a new one will overwrite the original."
     },
     {
       "NAMES": [
-        "色彩"
+        "Color"
       ],
-      "DESCRIPTION": "达到两层时，清除所有 #y色彩 ，若为彗，且当前不处在此 #y主题 ，则进入相应 #y主题 ；若为怪物，根据两种 #y色彩 的类型触发各种景象。"
+      "DESCRIPTION": "When getting two #yColors , clear all. If triggered on Hwei and two Colors are same , enter the #yTheme . Otherwise trigger various scenes based on two Colors."
     },
     {
       "NAMES": [
-        "宿墨"
+        "Ink"
       ],
-      "DESCRIPTION": "初始上限为 #b4 。每1滴 #y宿墨 增加2点 #y法强 。如果有 #y宿墨 ，打出攻击牌后会额外造成2点 #y法术伤害 ，然后消耗1滴 #y宿墨 ，若处于 #y主题 中还将产生额外效果。"
+      "DESCRIPTION": "The initial limit is #b4 . Each drop of ink increases #AP by 2. If has Ink , playing an attack card deals 2 extra #yMagicDamage and exhaust a drop of #yInk , in the theme it will produce additional effects."
     },
     {
       "NAMES": [
-        "主题"
+        "Theme"
       ],
-      "DESCRIPTION": "处于 #y主题 中时，打出一张无 #y落款 的牌后，对于此牌的每个目标，或是无目标时的自身，若没有 #y色彩 ，则给予与 #y主题 相同的 #y色彩 ； NL 彗自身获得两层与所处 #y主题 相同的 #y色彩 时，对所有敌人造成 #y景象 效果。"
+      "DESCRIPTION": "After played a card without #ySignature , for each target of this card without #yColor , give it the same #yColor as the #yTheme ; NL When Hwei acquires two same #yColors as the Theme, cause the scene to all enemies."
     },
     {
       "NAMES": [
-        "凝滞"
+        "Stasis"
       ],
-      "DESCRIPTION": "免疫所有伤害和负面效果，持续一回合"
+      "DESCRIPTION": "Immune to all damage and negative effects for one round."
     },
     {
       "NAMES": [
-        "月光"
+        "MoonLight"
       ],
-      "DESCRIPTION": "打出的牌若目标之一带有 #y月光 会将 #y月光 清除，若此牌会进入弃牌堆则转而放入手牌中。"
+      "DESCRIPTION": "If one of the targets of the played card has Moonlight, Moonlight will be cleared. If the card goes into the discard pile, put it into the hand instead."
     },
     {
       "NAMES": [
-        "悬置"
+        "Hang"
       ],
-      "DESCRIPTION": "从最左侧放入悬置区。如果悬置区已满（上限5张），最右侧的牌弹出到抽牌堆顶。"
+      "DESCRIPTION": "Put it into the Hang area from the left. If the Hang area is full (maximum 5 cards), the rightmost card will pop out to the top of the draw pile."
     },
     {
       "NAMES": [
-        "取下"
+        "TakeDown"
       ],
-      "DESCRIPTION": "将悬置区最右侧的牌取下"
+      "DESCRIPTION": "Take the rightmost card from the Hang area down."
     },
     {
       "NAMES": [
-        "灼烧"
+        "Burn"
       ],
-      "DESCRIPTION": "被灼烧的怪物在其回合开始时失去（5%当前生命值+你的 #y法强 ）的生命值，灼烧层数每回合下降 #b1 。"
+      "DESCRIPTION": "The burned monster loses (5% of its current health + your #yAP ) health at the beginning of its turn. Each turn, Burn is reduced by #b1 ."
     }
   ]
 }

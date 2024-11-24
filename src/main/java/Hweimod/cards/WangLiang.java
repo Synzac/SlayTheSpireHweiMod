@@ -1,5 +1,6 @@
 package Hweimod.cards;
 
+import Hweimod.actions.WangLiangAction;
 import Hweimod.cards.mould.MouldCard;
 import Hweimod.helpers.ModHelper;
 import Hweimod.modcore.HweiCardTagsEnum;
@@ -33,9 +34,10 @@ public class WangLiang extends MouldCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, HweiDamageTypeEnum.MAGIC), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        if(m.hasPower(WeakPower.POWER_ID) || m.hasPower(VulnerablePower.POWER_ID))
-            addToBot(new DrawCardAction(this.magicNumber));
+
         signature(p, m);
+
+        addToBot(new WangLiangAction(this.magicNumber, m));
     }
 
     @Override

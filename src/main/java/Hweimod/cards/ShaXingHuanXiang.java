@@ -36,7 +36,6 @@ public class ShaXingHuanXiang extends MouldCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeBlock(3);
-            upgradeMagicNumber(1);
         }
     }
 
