@@ -64,7 +64,8 @@ public class LuDengAction extends AbstractGameAction {
 
             if ((this.target.isDying || this.target.currentHealth <= 0) && LuDeng){
                 for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-                    addToTop(new LuDengAction(new DamageInfo(AbstractDungeon.player, damageAmount, HweiDamageTypeEnum.MAGIC), mo));
+                    if(!mo.escaped && !mo.isDead && !mo.halfDead)
+                        addToTop(new LuDengAction(new DamageInfo(AbstractDungeon.player, damageAmount, HweiDamageTypeEnum.MAGIC), mo));
                 }
             }
 
