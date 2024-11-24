@@ -5,11 +5,8 @@ import Hweimod.modcore.HweiCardTagsEnum;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import javassist.CtBehavior;
-
-import static basemod.BaseMod.logger;
 
 public class UseCardActionPatch {
     @SpirePatch(clz = UseCardAction.class, method = "update")
