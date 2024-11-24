@@ -20,7 +20,10 @@ public class UseCardActionPatch {
                 if (___targetCard[0].hasTag(HweiCardTagsEnum.HANG)){
                     MouldCard.xuanzhiquReceiveCard(___targetCard[0], AbstractDungeon.player.discardPile);
                 } else if(UCA.returnToHand) {
-                    AbstractDungeon.player.discardPile.moveToHand(___targetCard[0], AbstractDungeon.player.discardPile);
+                    if (AbstractDungeon.player.hand.size() == 10) {
+                        AbstractDungeon.player.createHandIsFullDialog();
+                    } else
+                        AbstractDungeon.player.discardPile.moveToHand(___targetCard[0], AbstractDungeon.player.discardPile);
                 }
             }
         }
