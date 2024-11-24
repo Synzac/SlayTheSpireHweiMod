@@ -3,7 +3,6 @@ package Hweimod.patches;
 import Hweimod.cards.mould.MouldCard;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.red.IronWave;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import javassist.CtBehavior;
 
