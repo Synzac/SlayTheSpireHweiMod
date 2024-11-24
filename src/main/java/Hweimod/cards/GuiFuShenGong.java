@@ -4,13 +4,8 @@ import Hweimod.actions.GuiFuShenGongAction;
 import Hweimod.cards.mould.MouldCard;
 import Hweimod.helpers.ModHelper;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.red.IronWave;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
-import java.util.ArrayList;
-
-import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.*;
 
 public class GuiFuShenGong extends MouldCard {
     public static final String ID = ModHelper.makePath(GuiFuShenGong.class.getSimpleName());

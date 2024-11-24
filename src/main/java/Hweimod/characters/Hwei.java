@@ -1,12 +1,13 @@
 package Hweimod.characters;
 
-import Hweimod.cards.*;
-import Hweimod.cards.mould.MouldCard;
+import Hweimod.cards.Defend;
+import Hweimod.cards.JingMing;
+import Hweimod.cards.Strike;
+import Hweimod.cards.ZaiE;
 import Hweimod.helpers.ModHelper;
 import Hweimod.modcore.HweiColorEnum;
 import Hweimod.modcore.HweiMod;
 import Hweimod.patches.AbstractPlayerPatch;
-import Hweimod.powers.InkPower;
 import Hweimod.relics.StrangePaintbrush;
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
