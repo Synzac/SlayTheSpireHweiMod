@@ -1,5 +1,6 @@
 package Hweimod.cards;
 
+import Hweimod.actions.HatAction;
 import Hweimod.cards.mould.MouldCard;
 import Hweimod.helpers.ModHelper;
 import Hweimod.modcore.HweiMod;
@@ -31,24 +32,9 @@ public class MieShiZheDeSiWangZhiMao extends MouldCard {
         }
         addToBot(new ApplyPowerAction(p, p, new APPower(p, this.magicNumber + a)));
 
-        updateCost(1);
         this.applyPowers();
-        AbstractDungeon.player.discardPile.group.stream().filter(c -> c instanceof MieShiZheDeSiWangZhiMao).forEach(c -> {
-            c.updateCost(1);
-            c.applyPowers();
-        });
-        AbstractDungeon.player.drawPile.group.stream().filter(c -> c instanceof MieShiZheDeSiWangZhiMao).forEach(c -> {
-            c.updateCost(1);
-            c.applyPowers();
-        });
-        AbstractDungeon.player.hand.group.stream().filter(c -> c instanceof MieShiZheDeSiWangZhiMao).forEach(c -> {
-            c.updateCost(1);
-            c.applyPowers();
-        });
-        XuanZhiQu.group.stream().filter(c -> c instanceof MieShiZheDeSiWangZhiMao).forEach(c -> {
-            c.updateCost(1);
-            c.applyPowers();
-        });
+
+        addToBot(new HatAction(this));
 
         signature(p, p);
     }

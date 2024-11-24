@@ -22,7 +22,7 @@ public class LianCunShan extends MouldCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            addToBot(new ApplyPowerAction(mo, p, new ZhuoShaoPower(p, this.magicNumber)));
+            addToBot(new ApplyPowerAction(mo, p, new ZhuoShaoPower(m, this.magicNumber)));
             signature(p, mo);
         }
     }

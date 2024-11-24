@@ -30,7 +30,7 @@ public class GuiFuShenGong extends MouldCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new  GuiFuShenGongAction());
+        addToBot(new GuiFuShenGongAction());
 
         signature(p, p);
     }

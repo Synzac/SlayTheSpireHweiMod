@@ -41,7 +41,7 @@ public class ZhuoShaoPower extends AbstractPower {
         if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT &&
                 !AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             flashWithoutSound();
-            addToBot(new FireLoseHpAction(this.owner, AbstractDungeon.player, this.amount, AbstractGameAction.AttackEffect.FIRE));
+            addToBot(new FireLoseHpAction(this.owner, this.owner, this.amount, AbstractGameAction.AttackEffect.FIRE));
         }
     }
 
