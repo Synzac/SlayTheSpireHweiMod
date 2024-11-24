@@ -1,6 +1,7 @@
 package Hweimod.actions;
 
 import Hweimod.cards.GuiFuShenGong;
+import Hweimod.patches.AbstractPlayerPatch;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -27,12 +28,12 @@ public class GuiFuShenGongAction extends AbstractGameAction {
 
     public void update() {
         if (this.duration == this.startDuration) {
-            if (GuiFuShenGong.list.isEmpty()) {
+            if (AbstractPlayerPatch.GuiFuShenGongListField.GuiFuShenGongList.get(player).isEmpty()) {
                 this.isDone = true;
                 return;
             }
             CardGroup temp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-            for (AbstractCard c : GuiFuShenGong.list){
+            for (AbstractCard c : AbstractPlayerPatch.GuiFuShenGongListField.GuiFuShenGongList.get(player)){
                 if(!Objects.equals(c.cardID, IronWave.ID))
                     temp.addToTop(c);
             }
@@ -50,7 +51,7 @@ public class GuiFuShenGongAction extends AbstractGameAction {
                 } else {
                     AbstractDungeon.actionManager.addToTop(new  MakeTempCardInHandAction(c, 1));
                 }
-                GuiFuShenGong.list.remove(c);
+                AbstractPlayerPatch.GuiFuShenGongListField.GuiFuShenGongList.get(player).remove(c);
             }
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
             AbstractDungeon.player.hand.refreshHandLayout();

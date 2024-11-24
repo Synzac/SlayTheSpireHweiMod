@@ -23,6 +23,7 @@ import com.megacrit.cardcrawl.cards.purple.Defend_Watcher;
 import com.megacrit.cardcrawl.cards.purple.Eruption;
 import com.megacrit.cardcrawl.cards.red.Bash;
 import com.megacrit.cardcrawl.cards.red.Defend_Red;
+import com.megacrit.cardcrawl.cards.red.IronWave;
 import com.megacrit.cardcrawl.cards.red.Strike_Red;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -292,7 +293,11 @@ public class Hwei extends CustomPlayer {
         for (AbstractCard c : this.masterDeck.group)
             UnlockTracker.markCardAsSeen(c.cardID);
 
-        GuiFuShenGong.initializeList();
+        AbstractPlayerPatch.GuiFuShenGongListField.GuiFuShenGongList.get(this).clear();
+        AbstractPlayerPatch.GuiFuShenGongListField.GuiFuShenGongList.get(this).add(new IronWave());
+        AbstractPlayerPatch.GuiFuShenGongListField.GuiFuShenGongList.get(this).addAll(srcCommonCardPool.group);
+        AbstractPlayerPatch.GuiFuShenGongListField.GuiFuShenGongList.get(this).addAll(srcUncommonCardPool.group);
+        AbstractPlayerPatch.GuiFuShenGongListField.GuiFuShenGongList.get(this).addAll(srcRareCardPool.group);
     }
 
     @Override

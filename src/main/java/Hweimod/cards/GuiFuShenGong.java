@@ -15,41 +15,9 @@ import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.*;
 public class GuiFuShenGong extends MouldCard {
     public static final String ID = ModHelper.makePath(GuiFuShenGong.class.getSimpleName());
 
-    public static ArrayList<AbstractCard> list = new ArrayList<>();
-
-    public ArrayList<AbstractCard> list1 = new ArrayList<>();
-
-    public static void initializeList(){
-        list.clear();
-        list.add(new IronWave());
-        list.addAll(srcCommonCardPool.group);
-        list.addAll(srcUncommonCardPool.group);
-        list.addAll(srcRareCardPool.group);
-    }
-
     public GuiFuShenGong(){
         super(GuiFuShenGong.class.getSimpleName(), 1, CardType.SKILL, CardRarity.RARE, CardTarget.NONE);
         this.exhaust = true;
-    }
-
-    @Override
-    public void applyPowers() {
-        if(list1.isEmpty() && list.isEmpty()){
-            initializeList();
-            list1 = list;
-            return;
-        }
-        if(list1.isEmpty()){
-            list1 = list;
-            return;
-        }
-        if(list.isEmpty()){
-            list = list1;
-            return;
-        }
-        if (list.size() < list1.size()){
-            list1 = list;
-        }
     }
 
     @Override

@@ -3,8 +3,11 @@ package Hweimod.patches;
 import Hweimod.cards.mould.MouldCard;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.red.IronWave;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import javassist.CtBehavior;
+
+import java.util.ArrayList;
 
 import static Hweimod.cards.mould.MouldCard.XuanZhiQu;
 
@@ -49,6 +52,13 @@ public class AbstractPlayerPatch {
     @SpirePatch(clz = AbstractPlayer.class, method = SpirePatch.CLASS)
     public static class maxInkField{
         public static SpireField<Integer> maxInks = new SpireField<>(() -> 4);
+    }
+
+    public static ArrayList<AbstractCard> cards = new ArrayList<>();
+
+    @SpirePatch(clz = AbstractPlayer.class, method = SpirePatch.CLASS)
+    public static class GuiFuShenGongListField{
+        public static SpireField<ArrayList<AbstractCard>> GuiFuShenGongList = new SpireField<>(() -> cards);
     }
 
     private static class Locator extends SpireInsertLocator {
