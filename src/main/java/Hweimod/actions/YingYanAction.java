@@ -3,6 +3,7 @@ package Hweimod.actions;
 import Hweimod.powers.APPower;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -33,6 +34,7 @@ public class YingYanAction extends ExhaustAction {
             }
             if(!this.upgraded){
                 int count = p.hand.size();
+                addToTop(new DrawCardAction(count));
                 if(count == 3){
                     addToTop(new VFXAction(p, new InflameEffect(p), 1.0F));
                     addToTop(new ApplyPowerAction(p, p, new APPower(p, 3)));
@@ -54,6 +56,7 @@ public class YingYanAction extends ExhaustAction {
         }
         if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
             int count = AbstractDungeon.handCardSelectScreen.selectedCards.group.size();
+            addToTop(new DrawCardAction(count));
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group)
                 p.hand.moveToExhaustPile(c);
             if(count == 3){
