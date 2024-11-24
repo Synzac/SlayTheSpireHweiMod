@@ -1,23 +1,23 @@
 {
   "HweiMod:Strike": {
     "NAME": "Strike",
-    "DESCRIPTION": "{@@}Deal !D! damage.{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
+    "DESCRIPTION": "{@@}Deal !D! damage.{!S!|>0= NL Signature:}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
     "UPGRADE_DESCRIPTION": "{@@}Deal !D! damage.{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}"
   },
   "HweiMod:Defend": {
     "NAME": "Defend",
-    "DESCRIPTION": "{@@}Gain !B! Block.{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block.{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}"
+    "DESCRIPTION": "{@@}Gain !B! Block.{!S!|>0= NL Signature:}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Block.{!S!|>0= NL Signature:}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}"
   },
   "HweiMod:ZaiE": {
     "NAME": "Adversity",
-    "DESCRIPTION": "{@@}Deal !D! MagicDamage .{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
-    "UPGRADE_DESCRIPTION": "{@@}Deal !D! MagicDamage .{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}"
+    "DESCRIPTION": "{@@}Deal !D! MagicDamage.{!S!|>0= NL Signature:}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
+    "UPGRADE_DESCRIPTION": "{@@}Deal !D! MagicDamage.{!S!|>0= NL Signature:}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}"
   },
   "HweiMod:JingMing": {
     "NAME": "Appease",
-    "DESCRIPTION": "{@@}Gain !B! Shield . NL Gain 1 drop of Ink .{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
-    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Shield . NL Gain 1 drop of Ink .{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}"
+    "DESCRIPTION": "{@@}Gain !B! Shield. NL Gain 1 drop of Ink.{!S!|>0= NL Signature:}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
+    "UPGRADE_DESCRIPTION": "{@@}Gain !B! Shield. NL Gain 1 drop of Ink.{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}"
   },
   "HweiMod:NiLiuTouZhi": {
     "NAME": "Undertow",
@@ -335,7 +335,7 @@
   "HweiMod:XiaZhen": {
     "NAME": "Twilight Shroud",
     "DESCRIPTION": "{@@}Obtain *Smoke *Bomb . NL Exhaust .{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
-    "UPGRADE_DESCRIPTION": "{@@}Obtain *Smoke *Bomb . NL Exhaust .{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}"
+    "UPGRADE_DESCRIPTION": "{@@}Obtain *Smoke *Bomb . NL Exhaust . NL Retain.{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}"
   },
   "HweiMod:HuaZhongLing": {
     "NAME": "Inkborn Fables",
