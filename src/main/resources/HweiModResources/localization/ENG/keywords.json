@@ -50,7 +50,7 @@
     },
     {
       "NAMES": [
-        "MoonLight"
+        "Moonlight"
       ],
       "DESCRIPTION": "If one of the targets of the played card has Moonlight, Moonlight will be cleared. If the card goes into the discard pile, put it into the hand instead."
     },

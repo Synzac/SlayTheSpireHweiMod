@@ -42,7 +42,6 @@ public class FuWenYongDong extends MouldCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(3);
-            upgradeMagicNumber(1);
         }
     }
 

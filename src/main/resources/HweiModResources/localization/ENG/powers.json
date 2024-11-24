@@ -173,7 +173,7 @@
   "HweiMod:HanHaiPower": {
     "NAME": "Sea",
     "DESCRIPTIONS": [
-      "Whenever #yplay a card signed #rSerenity , an Vitality scene is triggered. Whenever #yTakeDown a card signed #rSerenity , apply #b%d #yAP ."
+      "Whenever #yplay a card signed #rSerenity , an Vitality scene is triggered. Whenever #yTakeDown a card signed #rSerenity , gain #b%d drop of #yInk ."
     ]
   },
   "HweiMod:MengYanPower": {
