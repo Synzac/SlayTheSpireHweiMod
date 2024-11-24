@@ -28,6 +28,8 @@ public class FenXinPower extends AbstractPower {
     private static final String PATH128 = ModHelper.makePowerAd(FenXinPower.class.getSimpleName(), true);
     private static final String PATH48 = ModHelper.makePowerAd(FenXinPower.class.getSimpleName(), false);
 
+    private boolean invoked = false;
+
     public FenXinPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
@@ -42,8 +44,10 @@ public class FenXinPower extends AbstractPower {
 
     @Override
     public void atStartOfTurn() {
-        addToBot(new MagicDamageAllEnemiesAction(AbstractDungeon.player,this.amount*5,
+        if(!this.invoked)
+            addToBot(new MagicDamageAllEnemiesAction(AbstractDungeon.player,this.amount*5,
                 HweiDamageTypeEnum.MAGIC, AbstractGameAction.AttackEffect.FIRE));
+        this.invoked = true;
         addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, FenXinPower.POWER_ID));
     }
 
@@ -59,9 +63,10 @@ public class FenXinPower extends AbstractPower {
     @Override
     public void onDeath(){
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead() &&
-                this.owner.currentHealth <= 0)
+                this.owner.currentHealth <= 0 && !this.invoked)
             addToBot(new MagicDamageAllEnemiesAction(AbstractDungeon.player,this.amount*5,
                     HweiDamageTypeEnum.MAGIC, AbstractGameAction.AttackEffect.FIRE));
+        this.invoked = true;
     }
 
     @Override

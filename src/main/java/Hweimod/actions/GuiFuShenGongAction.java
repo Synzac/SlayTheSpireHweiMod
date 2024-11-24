@@ -6,10 +6,13 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.cards.red.IronWave;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+
+import java.util.Objects;
 
 public class GuiFuShenGongAction extends AbstractGameAction {
     public static final String[] TEXT = (CardCrawlGame.languagePack.getUIString("BetterToHandAction")).TEXT;
@@ -29,8 +32,10 @@ public class GuiFuShenGongAction extends AbstractGameAction {
                 return;
             }
             CardGroup temp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-            for (AbstractCard c : GuiFuShenGong.list)
-                temp.addToTop(c);
+            for (AbstractCard c : GuiFuShenGong.list){
+                if(!Objects.equals(c.cardID, IronWave.ID))
+                    temp.addToTop(c);
+            }
             temp.sortAlphabetically(true);
             temp.sortByRarityPlusStatusCardType(false);
             AbstractDungeon.gridSelectScreen.open(temp, 1, TEXT[0], false, false, false, false);
