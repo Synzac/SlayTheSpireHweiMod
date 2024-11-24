@@ -28,19 +28,19 @@
       "NAMES": [
         "Color"
       ],
-      "DESCRIPTION": "When getting two #yColors , clear all. If triggered on Hwei and two Colors are same , enter the #yTheme . Otherwise trigger various scenes based on two Colors."
+      "DESCRIPTION": "When getting two #yColors , clear all. If triggered on Hwei and two Colors are same , enter the #ySubject . Otherwise trigger various scenes based on two Colors."
     },
     {
       "NAMES": [
         "Ink"
       ],
-      "DESCRIPTION": "The initial limit is #b4 . Each drop of ink increases #AP by 2. If has Ink , playing an attack card deals 2 extra #yMagicDamage and exhaust a drop of #yInk , in the theme it will produce additional effects."
+      "DESCRIPTION": "The initial limit is #b4 . Each drop of ink increases #yAP by 2. If has Ink , playing an attack card deals 2 extra #yMagicDamage and exhaust a drop of #yInk , in the #ySubject it will produce additional effects."
     },
     {
       "NAMES": [
-        "Theme"
+        "Subject"
       ],
-      "DESCRIPTION": "After played a card without #ySignature , for each target of this card without #yColor , give it the same #yColor as the #yTheme ; NL When Hwei acquires two same #yColors as the Theme, cause the scene to all enemies."
+      "DESCRIPTION": "After played a card without #ySignature , for each target of this card without #yColor , apply the same #yColor as the #ySubject ; NL When Hwei acquires two same #yColors as the Subject, cause the scene to all enemies."
     },
     {
       "NAMES": [

@@ -16,7 +16,7 @@ public class QianBianZheJiaXiu extends MouldCard {
     public static final String ID = ModHelper.makePath(QianBianZheJiaXiu.class.getSimpleName());
 
     public QianBianZheJiaXiu(){
-        super(QianBianZheJiaXiu.class.getSimpleName(), 2, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(QianBianZheJiaXiu.class.getSimpleName(), 1, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
         this.magicNumber = this.baseMagicNumber = 6;
     }
 

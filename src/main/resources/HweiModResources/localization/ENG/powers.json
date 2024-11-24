@@ -2,184 +2,184 @@
   "HweiMod:APPower":{
     "NAME": "AP",
     "DESCRIPTIONS": [
-      "造成的 #y法术伤害 及获得的 #y护盾 提升 #b",
-      " 点。"
+      " #yMagicDamage dealt and #yShield Gained increase by #b",
+      "."
     ]
   },
   "HweiMod:InkPower":{
-  "NAME": "宿墨",
+  "NAME": "Ink",
   "DESCRIPTIONS": [
-    "每1滴 #y宿墨 提供2点 #y法强 。如果有 #y宿墨 ，打出攻击牌时会额外造成2点 #y法术伤害 ，然后消耗1滴 #y宿墨 ，若处于 #y主题 中还将产生额外效果。当前上限为 #b",
-    " 。"
+    "Each drop of ink increases #yAP by 2. Playing an attack card deals 2 extra #yMagicDamage and exhaust a drop of Ink, in the #ySubject it will produce additional effects. The current limit is #b",
+    "."
   ]
 },
   "HweiMod:Color_DisasterPower": {
-    "NAME": "色彩-灾",
+    "NAME": "Color-Disaster",
     "DESCRIPTIONS": [
-      "彗自身获得任意两层相同 #y色彩 时，不在此 #y主题 则不触发景象而进入相应 #y主题 ，已在此 #y主题 则对所有敌人触发景象。 NL #y景象 ： NL #r灾 + #r灾 ：爆炸，造成3点 #y法术伤害 。 NL #r灾 + #b靖 ：生机，彗获得2点 #y护盾 。 NL #r灾 + #p悚 ：恐怖，给予1层 #y易伤 。 NL #r灾 + #y绝望 ：毁灭，所有敌人受到双倍 #y法强 加成的12点 #y法术伤害 。"
+      "When Hwei obtains any two layers of the same Color, enter the corresponding #ySubject and the scene will not trigger. NL #yScene: NL #rDisaster + #rDisaster :Explosion, deal 3 #yMagicDamage. NL #rDisaster + #bSerenity :Vitality, Hwei gains 2 #yShield. NL #rDisaster + #pTorment :Fear, apply 1 #yVulnerable . NL #rDisaster + #yDespair :Destruction, all enemies take 12 MagicDamage by 200%% AP ."
     ]
   },
   "HweiMod:Color_SerenityPower": {
-    "NAME": "色彩-靖",
+    "NAME": "Color-Serenity",
     "DESCRIPTIONS": [
-      "彗自身获得任意两层相同 #y色彩 时，不在此 #y主题 则不触发景象而进入相应 #y主题 ，已在此 #y主题 则对所有敌人触发景象。 NL #y景象 ： NL #b靖 + #b靖 ：爆炸，造成3点 #y法术伤害 。 NL #b靖 + #r灾 ：生机，彗获得2点 #y护盾 。 NL #b靖 + #p悚 ：镇压，给予1层 #y虚弱 。 NL #b靖 + #y绝望 ：毁灭，所有敌人受到双倍 #y法强 加成的12点 #y法术伤害 。"
+      "When Hwei obtains any two layers of the same Color, enter the corresponding #ySubject and the scene will not trigger. NL #yScene: NL #bSerenity + #bSerenity :Explosion, deal 3 #yMagicDamage. NL #bSerenity + #rDisaster :Vitality, Hwei gains 2 #yShield. NL #bSerenity + #pTorment :Repression, apply 1 #yWeak . NL #bSerenity + #yDespair :Destruction, all enemies take 12 MagicDamage by 200%% AP ."
     ]
   },
   "HweiMod:Color_TormentPower": {
-    "NAME": "色彩-悚",
+    "NAME": "Color-Torment",
     "DESCRIPTIONS": [
-      "彗自身获得任意两层相同 #y色彩 时，不在此 #y主题 则不触发景象而进入相应 #y主题 ，已在此 #y主题 则对所有敌人触发景象。 NL #y景象 ： NL #p悚 + #p悚 ：爆炸，造成3点 #y法术伤害 。 NL #p悚 + #r灾 ：恐怖，给予1层 #y易伤 。 NL #p悚 + #b靖 ：镇压，给予1层 #y虚弱 。 NL #p悚 + #y绝望 ：毁灭，所有敌人受到双倍 #y法强 加成的12点 #y法术伤害 。"
+      "When Hwei obtains any two layers of the same Color, enter the corresponding #ySubject and the scene will not trigger. NL #yScene: NL #pTorment + #pTorment :Explosion, deal 3 #yMagicDamage. NL #pTorment + #rDisaster :Fear, apply 1 #yVulnerable . NL #pTorment + #bSerenity :Repression, apply 1 #yWeak . NL #pTorment + #yDespair :Destruction, all enemies take 12 MagicDamage by 200%% AP ."
     ]
   },
   "HweiMod:Color_DespairPower": {
-    "NAME": "色彩-绝望",
+    "NAME": "Color-Despair",
     "DESCRIPTIONS": [
-      "彗自身获得任意两层相同 #y色彩 时，不在此 #y主题 则不触发景象而进入相应 #y主题 ，已在此 #y主题 则对所有敌人触发景象。 NL #y景象 ： NL #y绝望 + #y绝望 ：虚无，一回合内，无法造成伤害、获得格挡、获得力量。 NL (其他)+ #y绝望 ：毁灭，所有敌人受到双倍 #y法强 加成的12点 #y法术伤害 。"
+      "When Hwei obtains any two layers of the same Color, enter the corresponding #ySubject and the scene will not trigger. NL #yScene: NL #yDespair + #yDespair :Void, cannot cause damage, block, or gain strength for one round. NL (Other)+ #yDespair :Destruction, all enemies take 12 MagicDamage by 200%% AP ."
     ]
   },
   "HweiMod:Subject_DisasterPower": {
-    "NAME": "主题-灾",
+    "NAME": "Subject-Disaster",
     "DESCRIPTIONS": [
-      "打出一张无 #y落款 的牌后，对于此牌的每个目标，或是无目标时的自身，若没有 #y色彩 ，则给予 #r色彩-灾 。 NL 彗获得两层 #r色彩-灾 时，对所有敌人造成“ #y爆炸 ”景象效果。 NL 触发 #y宿墨 时，额外伤害翻倍。"
+      "After playing an card without Signature, for each target of this card without #yColor , apply the Color-Disaster. NL When Hwei obtains two layers of Color-Disaster, cause an Explosion scene to all enemies. NL When #yInk is triggered, its additional damage is doubled."
     ]
   },
   "HweiMod:Subject_SerenityPower": {
-    "NAME": "主题-靖",
+    "NAME": "Subject-Serenity",
     "DESCRIPTIONS": [
-      "打出一张无 #y落款 的牌后，对于此牌的每个目标，或是无目标时的自身，若没有 #y色彩 ，则给予 #r色彩-靖 。 NL 彗获得两层 #r色彩-靖 时，对所有敌人造成“ #y爆炸 ”景象效果。 NL 触发 #y宿墨 时，抽一张牌。"
+      "After playing an card without Signature, for each target of this card without #yColor , apply the Color-Serenity. NL When Hwei obtains two layers of Color-Serenity, cause an Explosion scene to all enemies. NL When #yInk is triggered, draw 1 card."
     ]
   },
   "HweiMod:Subject_TormentPower": {
-    "NAME": "主题-悚",
+    "NAME": "Subject-Torment",
     "DESCRIPTIONS": [
-      "打出一张无 #y落款 的牌后，对于此牌的每个目标，或是无目标时的自身，若没有 #y色彩 ，则给予 #r色彩-悚 。 NL 彗获得两层 #r色彩-悚 时，对所有敌人造成“ #y爆炸 ”景象效果。 NL 触发 #y宿墨 时，获得 [E] 。"
+      "After playing an card without Signature, for each target of this card without #yColor , apply the Color-Torment. NL When Hwei obtains two layers of Color-Torment, cause an Explosion scene to all enemies. NL When #yInk is triggered, Gain [E] ."
     ]
   },
   "HweiMod:Subject_DespairPower": {
-    "NAME": "主题-绝望",
+    "NAME": "Subject-Despair",
     "DESCRIPTIONS": [
-      "打出一张无 #y落款 的牌后，对于此牌的每个目标，或是无目标时的自身，若没有 #y色彩 ，则给予 #r色彩-绝望 。 NL 彗获得两层 #r色彩-绝望 时，对所有敌人造成“ #y虚无 ”景象效果。 NL 触发 #y宿墨 时，不消耗宿墨 。"
+      "After playing an card without Signature, for each target of this card without #yColor , apply the Color-Despair. NL  When Hwei obtains two layers of Color-Despair, cause an Void scene to all enemies. NL When #yInk is triggered, it won't be exhausted."
   ]
 },
   "HweiMod:SpellBladePower": {
-    "NAME": "耀光",
+    "NAME": "SpellBlade",
     "DESCRIPTIONS": [
-      "本回合你打出的下一张攻击牌额外造成一次 #b%d 点 #y法术伤害 。"
+      "The next attack card you play this turn will cause an additional #b%d #yMagicDamage ."
     ]
   },
   "HweiMod:LichBanePower": {
-    "NAME": "巫妖",
+    "NAME": "LichBane",
     "DESCRIPTIONS": [
-      "打出技能牌后，本回合你打出的下一张攻击牌额外造成一次 #b%d 点 #y法术伤害 。"
+      "After playing a skill card, next attack card you play this turn will cause an additional #b%d #yMagicDamage ."
     ]
   },
   "HweiMod:HeartsteelPower": {
-    "NAME": "铛！",
+    "NAME": "Dang!",
     "DESCRIPTIONS": [
-      "第一次受到玩家造成的伤害时，额外受到10%玩家的最大生命值的伤害，玩家的最大生命值提升2%。"
+      "When receiving damage from player for the first time, an additional 10% of player's maximum health will be taken as damage, and player's maximum health will be increased by 2%."
     ]
   },
   "HweiMod:StasisPower": {
-    "NAME": "凝滞",
+    "NAME": "Stasis",
     "DESCRIPTIONS": [
-      "免疫伤害和负面效果，持续一回合。 #y“叮——” "
+      "Immune to all damage and negative effects for one round."
     ]
   },
   "HweiMod:MoonlightPower": {
-    "NAME": "月光",
+    "NAME": "Moonlight",
     "DESCRIPTIONS": [
-      "打出一张目标包含该敌人的牌后，清除月光，若此牌会进入弃牌堆，转而放入手牌中。"
+      "After playing a card whose targets contains this enemy, clear the Moonlight. If the card would go into the discard pile, it will be put into hand instead."
     ]
   },
   "HweiMod:VoidPower": {
-    "NAME": "虚无",
+    "NAME": "Void",
     "DESCRIPTIONS": [
-      "一回合内，无法造成伤害、获得格挡、获得 #y力量 。"
+      "Cannot cause damage, block, or gain #ystrength for one round."
     ]
   },
   "HweiMod:XuanNongPower": {
-    "NAME": "渲浓",
+    "NAME": "Pool of Reflection",
     "DESCRIPTIONS": [
-      "回合结束时，若处于主题 #b靖 ，获得 #b%d 点 护盾 。"
+      "At the end of your turn, if you are in the #ySubject-Serenity , gain #b%d #yShield ."
     ]
   },
   "HweiMod:PengPaiPower": {
-    "NAME": "澎湃",
+    "NAME": "Depth Charge",
     "DESCRIPTIONS": [
-      "回合开始时，获得 #b%d 点 #y宿墨上限 和 #b%d 滴 #y宿墨 。"
+      "At the start of your turn, limit of #yInk increase by #b%d , gain #b%d drop of #yInk ."
     ]
   },
   "HweiMod:QuJingZheYuePower": {
-    "NAME": "曲境折跃",
+    "NAME": "Portal Jump",
     "DESCRIPTIONS": [
-      "回合开始时，将抽牌堆底的 #b%d 张牌悬置。"
+      "At the start of your turn, #yhang the card from bottom of draw pile #b%d times."
     ]
   },
   "HweiMod:ZhuoShaoPower": {
-    "NAME": "灼烧",
+    "NAME": "Burn",
     "DESCRIPTIONS": [
-      "在其回合开始时失去（5%%当前生命值+你的 #b法强 ）的生命值，层数每回合下降 #b1 。"
+      "Loses (5% of current health + your #yAP ) health at the start of its turn, and the stacks decrease by 1 each turn."
     ]
   },
   "HweiMod:QianBianZhePower1": {
-    "NAME": "千变者(格挡)",
+    "NAME": "Jak'Sho(Block)",
     "DESCRIPTIONS": [
-      "进入主题时获得 #b%d 点格挡。"
+      "Gain #b%d block when applied a #ySubject ."
     ]
   },
   "HweiMod:QianBianZhePower2": {
-    "NAME": "千变者(抽牌)",
+    "NAME": "Jak'Sho(Draw)",
     "DESCRIPTIONS": [
-      "进入主题时抽 #b%d 张牌。"
+      "Draw #b%d card when applied a #ySubject ."
     ]
   },
   "HweiMod:AnYanHuoJuPower": {
-    "NAME": "黯炎火炬",
+    "NAME": "Blackfire Torch",
     "DESCRIPTIONS": [
-      "打出 #y落款 为 #p悚 的牌时对所有敌人施加 #b%d 层灼烧。“恐怖”和“镇压”的景象对自身触发时改为对所有敌人触发。"
+      "Playing a card signed with Torment applies #b%d Burn to all enemies. When the Fear or Repression scenes were triggered on you, they were changed to trigger on all enemies."
     ]
   },
   "HweiMod:JinRanPower": {
-    "NAME": "尽染",
+    "NAME": "Inherent Glamour",
     "DESCRIPTIONS": [
-      "每当一张牌被 #y悬置 时，若其没有 #y落款 则获得对应当前 #y主题 的 #y落款 。"
+      "Whenever a card is #yhung , if it doesn't have a #ysignature , it will get a #ysignature corresponding to the current #ySubject ."
     ]
   },
   "HweiMod:QunYaFengBaoPower": {
-    "NAME": "群鸦风暴",
+    "NAME": "Crowstorm",
     "DESCRIPTIONS": [
-      "每当一张牌获得其原所没有的 #y落款 ，抽 #b%d 张牌，若为 #p悚 ，获得1滴 #y宿墨 。"
+      "Whenever a card obtains a #ysignature that it didn't have originally, draw #b%d cards. If it is #pTorment , gain 1 drop of #yInk ."
     ]
   },
   "HweiMod:HuaZhongLingPower": {
-    "NAME": "画中灵：",
+    "NAME": "Inkborn Fables:",
     "DESCRIPTIONS": [
-      " #b%d 个回合后将一张 #y",
-      " 的复制 #y悬置 。"
+      "After #b%d turns #yhang a copy of #y",
+      "."
     ]
   },
   "HweiMod:FenXinPower": {
-    "NAME": "焚心",
+    "NAME": "Burning heart",
     "DESCRIPTIONS": [
-      "每打出一张牌，失去（ #b%d + #b%d %%法强）生命值，回合结束时或其死亡时，对所有敌人造成 #b%d 点 #y法术伤害 。"
+      "Each time a card is played, loses ( #b%d + #b%d %% #yAP ) health. At the end of the turn or when it dies, cause #b%d #yMagicDamage to all enemies."
     ]
   },
   "HweiMod:HaoJiePower": {
-    "NAME": "浩劫",
+    "NAME": "Catastrophe",
     "DESCRIPTIONS": [
-      "每当 #y悬置 落款为 #r灾 的牌，对所有敌人触发“爆炸”。每当 #y消耗 落款为 #r灾 的牌，获得 #b%d 点 #y法强 。"
+      "Whenever #yhang a card signed #rDisaster , an Explosion scene is triggered for all enemies. Whenever #yexhaust a card signed #rDisaster , apply #b%d #yAP ."
     ]
   },
   "HweiMod:HanHaiPower": {
-    "NAME": "瀚海",
+    "NAME": "Sea",
     "DESCRIPTIONS": [
-      "每当打出落款为 #r靖 的牌，触发“生机”。每当 #y取下 落款为 #r靖 的牌，获得 #b%d 滴 #y宿墨 。"
+      "Whenever #yplay a card signed #rSerenity , an Vitality scene is triggered. Whenever #yTakeDown a card signed #rSerenity , apply #b%d #yAP ."
     ]
   },
   "HweiMod:MengYanPower": {
-    "NAME": "梦魇",
+    "NAME": "Nightmare",
     "DESCRIPTIONS": [
-      "回合开始时，随机 #b%d 张手牌 #y落款 变为 #p悚 且本回合下次打出耗费 #b0 。"
+      "At the start of your turn, #b%d random cards in hand will obtain #ySignature-Torment , and it costs #b0 this turn."
     ]
   }
 }
