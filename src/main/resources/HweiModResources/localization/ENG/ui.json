@@ -43,5 +43,11 @@
     "TEXT": [
       "copy, and copy again every few rounds."
     ]
+  },
+  "HweiMod:JiXing Option": {
+    "TEXT": [
+      "Withdraw",
+      "Withdraw all gold you stored"
+    ]
   }
 }

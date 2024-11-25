@@ -12,5 +12,12 @@
     "DESCRIPTIONS": [
       "The first time you deal damage to each enemy, an additional #b10% of your maximum health will be dealt as damage, then increasing your maximum health by #b2% ."
     ]
+  },
+  "HweiMod:JiXingWenZhang":{
+    "NAME": "Fortune Emblem",
+    "FLAVOR": "Gold tree?",
+    "DESCRIPTIONS": [
+      "When you loss HP, store #y32 gold, heal #b2 HP. Next time store half of that in this battle. You can withdraw all gold you have stored at campfire."
+    ]
   }
 }

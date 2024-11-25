@@ -4,6 +4,7 @@ import Hweimod.cards.mould.MouldCard;
 import Hweimod.helpers.ModHelper;
 import Hweimod.modcore.HweiCardTagsEnum;
 import Hweimod.powers.Subject_TormentPower;
+import basemod.AutoAdd;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardQueueItem;
@@ -13,9 +14,11 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.GetAllInBattleInstances;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.RainingGoldEffect;
+import jdk.nashorn.internal.ir.annotations.Ignore;
 
 import static java.lang.Math.round;
 
+@AutoAdd.Ignore
 public class JiXing extends MouldCard {
     public static final String ID = ModHelper.makePath(JiXing.class.getSimpleName());
 

@@ -128,7 +128,6 @@ public class Hwei extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
         retVal.add(StrangePaintbrush.ID);
-
         //retVal.add(Heartsteel.ID);
 
         return retVal;
