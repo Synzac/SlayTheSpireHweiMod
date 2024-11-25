@@ -23,7 +23,7 @@ public class FenXinXuanHuaHui extends MouldCard {
     public FenXinXuanHuaHui(){
         super(FenXinXuanHuaHui.class.getSimpleName(), 1, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY);
         this.damage = this.baseDamage = 3;
-        this.magicNumber = this.baseMagicNumber = 15;
+        this.magicNumber = this.baseMagicNumber = 12;
         this.damageTypeForTurn = this.damageType = HweiDamageTypeEnum.MAGIC;
         this.exhaust = true;
     }
@@ -41,7 +41,7 @@ public class FenXinXuanHuaHui extends MouldCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(1);
-            upgradeMagicNumber(5);
+            upgradeMagicNumber(4);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

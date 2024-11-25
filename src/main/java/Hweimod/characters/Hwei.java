@@ -10,6 +10,7 @@ import Hweimod.modcore.HweiMod;
 import Hweimod.patches.AbstractPlayerPatch;
 import Hweimod.relics.StrangePaintbrush;
 import basemod.abstracts.CustomPlayer;
+import basemod.abstracts.CustomSavable;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -39,13 +40,14 @@ import com.megacrit.cardcrawl.localization.TutorialStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 import static Hweimod.modcore.PlayerEnum.HWEI;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.*;
 import static com.megacrit.cardcrawl.helpers.ModHelper.isModEnabled;
 
-public class Hwei extends CustomPlayer {
+public class Hwei extends CustomPlayer implements CustomSavable<ArrayList<AbstractCard>> {
 
     // 火堆的人物立绘（行动前）
     private static final String MY_CHARACTER_SHOULDER_1 = "HweiModResources/img/char/shoulder1.png";
@@ -305,4 +307,16 @@ public class Hwei extends CustomPlayer {
         super.initializeClass(imgUrl, shoulder2ImgUrl, shouldImgUrl, corpseImgUrl, info, hb_x, hb_y, hb_w, hb_h, energy);
         AbstractPlayerPatch.maxInkField.maxInks.set(this, 4);
     }
+
+    @Override
+    public ArrayList<AbstractCard> onSave() {
+        return AbstractPlayerPatch.GuiFuShenGongListField.GuiFuShenGongList.get(this);
+    }
+
+    @Override
+    public void onLoad(ArrayList<AbstractCard> list) {
+        AbstractPlayerPatch.GuiFuShenGongListField.GuiFuShenGongList.set(this, list);
+    }
 }
+
+

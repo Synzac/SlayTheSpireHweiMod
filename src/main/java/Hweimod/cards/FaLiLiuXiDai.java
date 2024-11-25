@@ -12,7 +12,7 @@ public class FaLiLiuXiDai extends MouldCard {
     public static final String ID = ModHelper.makePath(FaLiLiuXiDai.class.getSimpleName());
 
     public FaLiLiuXiDai(){
-        super(FaLiLiuXiDai.class.getSimpleName(), 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(FaLiLiuXiDai.class.getSimpleName(), 0, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
         this.misc = 0;
         this.magicNumber = this.baseMagicNumber = 0;
         this.exhaust = true;
