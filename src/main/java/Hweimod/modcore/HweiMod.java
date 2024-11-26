@@ -2,6 +2,7 @@ package Hweimod.modcore;
 
 import Hweimod.cards.Strike;
 import Hweimod.characters.Hwei;
+import Hweimod.potion.Elixir_of_Sorcery;
 import Hweimod.relics.StrangePaintbrush;
 import basemod.AutoAdd;
 import basemod.BaseMod;
@@ -10,6 +11,7 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
@@ -22,9 +24,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 import static Hweimod.modcore.HweiColorEnum.HWEI_COLOR;
+import static com.badlogic.gdx.graphics.Color.*;
 
 @SpireInitializer
-public class HweiMod implements EditCardsSubscriber, EditStringsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber, EditKeywordsSubscriber, AddAudioSubscriber{
+public class HweiMod implements EditCardsSubscriber, EditStringsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber, EditKeywordsSubscriber, AddAudioSubscriber, PostInitializeSubscriber{
     public static final Logger logger = LogManager.getLogger(HweiMod.class.getName());
 
     // 人物选择界面按钮的图片
@@ -81,6 +84,7 @@ public class HweiMod implements EditCardsSubscriber, EditStringsSubscriber, Edit
         tutorial = "HweiModResources/localization/" + lang + "/characters.json";
         relic = "HweiModResources/localization/" + lang + "/relics.json";
         power = "HweiModResources/localization/" + lang + "/powers.json";
+        potion = "HweiModResources/localization/" + lang + "/potions.json";
 
         String powerStrings = Gdx.files.internal(power).readString(String.valueOf(StandardCharsets.UTF_8));
         BaseMod.loadCustomStrings(PowerStrings.class, powerStrings);
@@ -93,6 +97,9 @@ public class HweiMod implements EditCardsSubscriber, EditStringsSubscriber, Edit
 
         String uiStrings = Gdx.files.internal(ui).readString(String.valueOf(StandardCharsets.UTF_8));
         BaseMod.loadCustomStrings(UIStrings.class, uiStrings);
+
+        String potionStrings = Gdx.files.internal(potion).readString(String.valueOf(StandardCharsets.UTF_8));
+        BaseMod.loadCustomStrings(PotionStrings.class, potionStrings);
 
         String relicStrings = Gdx.files.internal(relic).readString(String.valueOf(StandardCharsets.UTF_8));
         BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
@@ -141,6 +148,11 @@ public class HweiMod implements EditCardsSubscriber, EditStringsSubscriber, Edit
     }
 
     @Override
+    public void receivePostInitialize(){
+        BaseMod.addPotion(Elixir_of_Sorcery.class, BLUE, BLUE, null, Elixir_of_Sorcery.ID);
+    }
+
+    @Override
     public void receiveEditKeywords() {
         logger.info("===============加载关键字===============");
         Gson gson = new Gson();
@@ -149,7 +161,7 @@ public class HweiMod implements EditCardsSubscriber, EditStringsSubscriber, Edit
             lang = "ZHS";
         }
 
-        String keywordsPath ="HweiModResources/localization/" + lang + "/keywords.json";
+        String keywordsPath = "HweiModResources/localization/" + lang + "/keywords.json";
         Keywords keywords = gson.fromJson(loadJson(keywordsPath), Keywords.class);
         if (keywords != null) {
             for (Keyword keyword : keywords.keywords) {
