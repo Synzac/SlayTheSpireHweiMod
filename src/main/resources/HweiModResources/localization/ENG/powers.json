@@ -76,7 +76,7 @@
   "HweiMod:HeartsteelPower": {
     "NAME": "Dang!",
     "DESCRIPTIONS": [
-      "When receiving damage from player for the first time, an additional 10% of player's maximum health will be taken as damage, and player's maximum health will be increased by 2%."
+      "When receiving damage from player for the first time, an additional 10%% of player's maximum health will be taken as damage, and player's maximum health will be increased by 2%%."
     ]
   },
   "HweiMod:StasisPower": {
@@ -118,7 +118,7 @@
   "HweiMod:ZhuoShaoPower": {
     "NAME": "Burn",
     "DESCRIPTIONS": [
-      "Loses (5% of current health + your #yAP ) health at the start of its turn, and the stacks decrease by 1 each turn."
+      "Loses (5%% of current health + your #yAP ) health at the start of its turn, and the stacks decrease by 1 each turn."
     ]
   },
   "HweiMod:QianBianZhePower1": {
