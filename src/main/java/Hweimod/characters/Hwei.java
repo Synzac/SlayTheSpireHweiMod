@@ -31,6 +31,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
@@ -260,6 +261,17 @@ public class Hwei extends CustomPlayer implements CustomSavable<ArrayList<Abstra
     @Override
     public String getVampireText() {
         return Vampires.DESCRIPTIONS[0];
+    }
+
+    @Override
+    public ArrayList<CutscenePanel> getCutscenePanels() {
+        ArrayList<CutscenePanel> panels = new ArrayList<>();
+        // 有两个参数的，第二个参数表示出现图片时播放的音效
+        panels.add(new CutscenePanel("HweiModResources/img/char/cg1.png"));
+        panels.add(new CutscenePanel("HweiModResources/img/char/cg2.png"));
+        panels.add(new CutscenePanel("HweiModResources/img/char/cg3.png"));
+
+        return panels;
     }
 
     @Override

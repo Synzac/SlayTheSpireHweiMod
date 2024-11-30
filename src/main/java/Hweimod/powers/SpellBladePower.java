@@ -46,7 +46,7 @@ public class SpellBladePower extends AbstractPower {
     public void onUseCard(AbstractCard card, UseCardAction action){
         if(card.type.equals(AbstractCard.CardType.ATTACK)){
             if(card.target == AbstractCard.CardTarget.ALL_ENEMY){
-                addToTop(new MagicDamageAllEnemiesAction((AbstractPlayer) this.owner, this.amount, HweiDamageTypeEnum.MAGIC, AbstractGameAction.AttackEffect.FIRE));
+                addToTop(new MagicDamageAllEnemiesAction(this.owner, this.amount, HweiDamageTypeEnum.MAGIC, AbstractGameAction.AttackEffect.FIRE));
             }
             else if(card.target == AbstractCard.CardTarget.ENEMY){
                 addToTop(new MagicDamageAction(action.target, new DamageInfo(this.owner, this.amount , HweiDamageTypeEnum.MAGIC), AbstractGameAction.AttackEffect.FIRE));

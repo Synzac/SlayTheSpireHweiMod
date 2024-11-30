@@ -1,5 +1,6 @@
 package Hweimod.powers;
 
+import Hweimod.actions.DoubleMagicDamageAllEnemiesAction;
 import Hweimod.actions.MagicDamageAction;
 import Hweimod.actions.MagicDamageAllEnemiesAction;
 import Hweimod.helpers.ModHelper;
@@ -114,12 +115,15 @@ public class InkPower extends AbstractPower{
             if(this.amount > 0) {
                 if (card.target == AbstractCard.CardTarget.ALL_ENEMY) {
                     if (this.owner.hasPower(Subject_DisasterPower.POWER_ID)) {
-                        addToTop(new MagicDamageAllEnemiesAction(this.owner, 4, HweiDamageTypeEnum.DOUBLE_MAGIC, AbstractGameAction.AttackEffect.FIRE));
+                        addToTop(new DoubleMagicDamageAllEnemiesAction(this.owner, 4, HweiDamageTypeEnum.DOUBLE_MAGIC, AbstractGameAction.AttackEffect.FIRE));
                     } else {
                         addToTop(new MagicDamageAllEnemiesAction(this.owner, 2, HweiDamageTypeEnum.MAGIC, AbstractGameAction.AttackEffect.FIRE));
                     }
                 } else if (card.target == AbstractCard.CardTarget.ENEMY) {
-                    addToTop(new MagicDamageAction(action.target, new DamageInfo(this.owner, 2, HweiDamageTypeEnum.MAGIC), AbstractGameAction.AttackEffect.FIRE));
+                    if (this.owner.hasPower(Subject_DisasterPower.POWER_ID)) {
+                        addToTop(new MagicDamageAction(action.target, new DamageInfo(this.owner, 4, HweiDamageTypeEnum.DOUBLE_MAGIC), AbstractGameAction.AttackEffect.FIRE));
+                    } else
+                        addToTop(new MagicDamageAction(action.target, new DamageInfo(this.owner, 2, HweiDamageTypeEnum.MAGIC), AbstractGameAction.AttackEffect.FIRE));
                 }
 
                 if (this.owner.hasPower(Subject_SerenityPower.POWER_ID)) {

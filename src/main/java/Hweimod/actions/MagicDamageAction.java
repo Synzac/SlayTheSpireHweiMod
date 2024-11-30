@@ -1,5 +1,6 @@
 package Hweimod.actions;
 
+import Hweimod.modcore.HweiDamageTypeEnum;
 import Hweimod.powers.APPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -13,7 +14,10 @@ public class MagicDamageAction extends AbstractGameAction {
 
     public MagicDamageAction(AbstractCreature target, DamageInfo info, AbstractGameAction.AttackEffect effect) {
         if(info.owner.hasPower(APPower.POWER_ID)) {
-            info.output += info.owner.getPower(APPower.POWER_ID).amount;
+            if (info.type == HweiDamageTypeEnum.MAGIC)
+                info.output += info.owner.getPower(APPower.POWER_ID).amount;
+            else if (info.type == HweiDamageTypeEnum.DOUBLE_MAGIC)
+                info.output += 2*info.owner.getPower(APPower.POWER_ID).amount;
         }
         this.info = info;
         setValues(target, info);
