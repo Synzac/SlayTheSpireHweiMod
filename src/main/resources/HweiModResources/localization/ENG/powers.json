@@ -181,5 +181,12 @@
     "DESCRIPTIONS": [
       "At the start of your turn, #b%d random cards in hand will obtain #ySignature-Torment , and it costs #b0 this turn."
     ]
+  },
+  "HweiMod:DianJingPower": {
+    "NAME": "Eye to Eye",
+    "DESCRIPTIONS": [
+      "Your next card whose Signature is the same as your Subject is played twice this turn.",
+      "Your next #b%d cards whose Signature is the same as your Subject is played twice this turn."
+    ]
   }
 }

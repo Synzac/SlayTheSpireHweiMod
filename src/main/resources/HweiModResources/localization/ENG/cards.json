@@ -355,7 +355,8 @@
   "HweiMod:MengLongGuangBiaoZuo": {
     "NAME": "Paintings Framed in Half-Light",
     "DESCRIPTION": "{@@}Draw !M! cards, NL gain [E] for every different Signature these cards have. NL Exhaust .{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
-    "UPGRADE_DESCRIPTION": "{@@}Draw !M! cards, NL gain [E] for every different Signature these cards have. NL Exhaust .{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}"
+    "UPGRADE_DESCRIPTION": "{@@}Draw !M! cards, NL gain [E] for every different Signature these cards have. NL Exhaust .{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
+    "FLAVOR": "Artist: Sveta Pikul"
   },
   "HweiMod:HaoJie": {
     "NAME": "Catastrophe",
@@ -371,6 +372,12 @@
     "NAME": "Nightmare",
     "DESCRIPTION": "{@@}Enter *Subject-Torment . NL At the start of your turn, !M! random card in hand will obtain *Signature-Torment , and cost 0 this turn.{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
     "UPGRADE_DESCRIPTION": "{@@}Enter *Subject-Torment . NL At the start of your turn, !M! random cards in hand will obtain *Signature-Torment , and cost 0 this turn.{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}"
+  },
+  "HweiMod:DianJing": {
+    "NAME": "Eye to Eye",
+    "DESCRIPTION": "{@@}This turn, your next !M! card whose Signature is the same as your Subject is played twice.{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
+    "UPGRADE_DESCRIPTION": "{@@}This turn, your next !M! cards whose Signature is the same as your Subject is played twice.{!S!|>0= NL Signature :}{!S!|1=Disaster|2=Serenity|3=Torment|4=Despair}{!S!|>0=.}",
+    "FLAVOR": "Artist: Skiz0h"
   }
 }
 
