@@ -11,7 +11,6 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
-import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
@@ -116,7 +115,8 @@ public class HweiMod implements EditCardsSubscriber, EditStringsSubscriber, Edit
                 .cards(); // 开始批量添加卡牌
         logger.info("================加入卡牌================");
         BaseMod.addDynamicVariable(new SignatureVariable());
-        BaseMod.addDynamicVariable(new FaLiVariable());
+        BaseMod.addDynamicVariable(new FaLiVariable1());
+        BaseMod.addDynamicVariable(new FaLiVariable2());
         BaseMod.addDynamicVariable(new JiXingVariable());
     }
 

@@ -9,12 +9,15 @@ import com.megacrit.cardcrawl.actions.unique.ApotheosisAction;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.Settings;
 
+import java.util.Objects;
+
 public class ApotheosisActionPatch {
     @SpirePatch(clz = ApotheosisAction.class, method = "update")
     public static class updatePatch{
         @SpirePrefixPatch
         public static void PrefixPatch(ApotheosisAction AA){
-            if(ReflectionHacks.getPrivateInherited(AA, AbstractGameAction.class, "duration").equals(Settings.ACTION_DUR_MED))
+            if(Objects.equals(ReflectionHacks.getPrivateInherited(AA, AbstractGameAction.class, "duration"), Settings.ACTION_DUR_MED)
+                    && !MouldCard.XuanZhiQu.isEmpty())
                 ReflectionHacks.privateMethod(ApotheosisAction.class, "upgradeAllCardsInGroup", CardGroup.class).invoke(MouldCard.XuanZhiQu);
         }
     }
